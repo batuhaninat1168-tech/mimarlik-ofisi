@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Mimarlık | Çağdaş Mekan Tasarımları</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-stone-50 text-stone-800 antialiased">
+    <!-- ==================== ÜST MENÜ (HEADER) ==================== -->
+    <header class="sticky top-0 z-50 bg-stone-50/90 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold tracking-widest text-stone-900 uppercase">
+                Aura<span class="text-amber-700">.</span>
+            </a>
+
+            <!-- Menü Linkleri (Masaüstü) -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-stone-600">
+                <a href="#projeler" class="hover:text-stone-900 transition-colors">Projeler</a>
+                <a href="#hakkimizda" class="hover:text-stone-900 transition-colors">Hakkımızda</a>
+                <a href="#hizmetler" class="hover:text-stone-900 transition-colors">Hizmetler</a>
+                <a href="#iletisim" class="hover:text-stone-900 transition-colors">İletişim</a>
+            </nav>
+
+            <!-- İletişim / Teklif Butonu -->
+            <a href="#iletisim"
+                class="inline-flex items-center justify-center px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-stone-900 hover:bg-amber-800 transition-all">
+                Proje Başlat
+            </a>
+
+        </div>
+    </header>
+    <!-- ==================== HERO (KAPAK BÖLÜMÜ) ==================== -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <!-- Sol Taraf: Başlık ve Butonlar -->
+                <div class="lg:col-span-7 space-y-8">
+
+                    <!-- Küçük Rozet / Kategori -->
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-stone-200/60 text-stone-700 text-xs font-medium tracking-wide">
+                        <span class="w-2 h-2 rounded-full bg-amber-600"></span>
+                        Kocaeli Merkezli Mimarlık Stüdyosu
+                    </div>
+
+                    <!-- Ana Başlık (Müşterinin En Çok Dikkat Edeceği Yer) -->
+                    <h1
+                        class="text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-stone-900 leading-[1.15]">
+                        Mekanlara <span class="font-serif italic font-normal text-amber-900">ruh katan</span>, zamansız
+                        mimari çözümler.
+                    </h1>
+
+                    <p class="text-lg text-stone-600 font-light max-w-xl leading-relaxed">
+                        Konut, ticari ve kamusal alanlarda estetik ile fonksiyonelliği buluşturuyoruz. Sürdürülebilir ve
+                        yaşayan yapılar tasarlıyoruz.
+                    </p>
+
+                    <!-- Aksiyon Butonları -->
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <a href="#projeler"
+                            class="px-7 py-3.5 bg-stone-900 text-white text-sm font-medium hover:bg-stone-800 transition-all">
+                            Projeleri Keşfet
+                        </a>
+                        <a href="#iletisim"
+                            class="px-7 py-3.5 border border-stone-300 text-stone-800 text-sm font-medium hover:bg-stone-200/50 transition-all">
+                            Bize Ulaşın
+                        </a>
+                    </div>
+
+                    <!-- İstatistikler (Güven Veren Kısım) -->
+                    <div class="grid grid-cols-3 gap-6 pt-8 border-t border-stone-200/80">
+                        <div>
+                            <p class="text-3xl font-light text-stone-900">12+</p>
+                            <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Yıllık Deneyim</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-light text-stone-900">85+</p>
+                            <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Tamamlanan Proje</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-light text-stone-900">14</p>
+                            <p class="text-xs text-stone-500 uppercase tracking-wider mt-1">Tasarım Ödülü</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Sağ Taraf: Ana Görsel -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative aspect-[4/5] overflow-hidden rounded-sm bg-stone-200 shadow-2xl">
+                        <!-- Unsplash Mimarlık Görseli -->
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80"
+                            alt="Modern Mimari Villa"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out">
+                    </div>
+                    <!-- Sağ alttaki dekoratif kutucuk -->
+                    <div
+                        class="absolute -bottom-6 -left-6 bg-white p-5 shadow-xl border border-stone-100 hidden sm:block">
+                        <p class="text-xs text-stone-400 uppercase tracking-wider font-semibold">Son Proje</p>
+                        <p class="text-sm font-medium text-stone-900 mt-0.5">Villa Kilyos / 2026</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ==================== ÖNE ÇIKAN PROJELER ==================== -->
+    <!-- ==================== ÖNE ÇIKAN PROJELER (TIKLANABİLİR GALERİ) ==================== -->
+    <section id="projeler" class="py-24 bg-stone-100/70 border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- Bölüm Başlığı -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+                <div>
+                    <span class="text-xs uppercase tracking-widest text-amber-700 font-semibold">Portföy</span>
+                    <h2 class="text-3xl sm:text-4xl font-light text-stone-900 mt-2">Öne Çıkan Çalışmalar</h2>
+                </div>
+                <p class="text-stone-500 text-sm max-w-md">
+                    Fotoğrafların üzerine tıklayarak projelerin detaylı galerisini ve iç mekan çekimlerini
+                    inceleyebilirsiniz.
+                </p>
+            </div>
+
+            <!-- Proje Kartları -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Kart 1 (Tıklanınca modal-1 açılır) -->
+                <div onclick="openModal('modal-1')" class="group cursor-pointer">
+                    <div class="relative overflow-hidden aspect-[4/3] bg-stone-200 mb-4">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80"
+                            alt="Sapanca Cam & Çelik Ev"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
+                        <div
+                            class="absolute inset-0 bg-stone-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span
+                                class="bg-white/90 text-stone-900 text-xs uppercase tracking-wider font-semibold px-4 py-2 shadow-lg">Galeriyi
+                                Gör</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between text-xs text-stone-400 uppercase tracking-wider mb-1">
+                        <span>Konut / Villa</span>
+                        <span>2025</span>
+                    </div>
+                    <h3 class="text-xl font-medium text-stone-900 group-hover:text-amber-800 transition-colors">
+                        Sapanca Cam & Çelik Ev
+                    </h3>
+                    <p class="text-sm text-stone-500 mt-1">Doğa ile iç içe, sıfır karbon ayak izi hedefiyle tasarlandı.
+                    </p>
+                </div>
+
+                <!-- Kart 2 (Tıklanınca modal-2 açılır) -->
+                <div onclick="openModal('modal-2')" class="group cursor-pointer">
+                    <div class="relative overflow-hidden aspect-[4/3] bg-stone-200 mb-4">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+                            alt="Levent Loft"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
+                        <div
+                            class="absolute inset-0 bg-stone-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span
+                                class="bg-white/90 text-stone-900 text-xs uppercase tracking-wider font-semibold px-4 py-2 shadow-lg">Galeriyi
+                                Gör</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between text-xs text-stone-400 uppercase tracking-wider mb-1">
+                        <span>Ticari / Ofis</span>
+                        <span>2024</span>
+                    </div>
+                    <h3 class="text-xl font-medium text-stone-900 group-hover:text-amber-800 transition-colors">
+                        Levent Loft Çalışma Alanı
+                    </h3>
+                    <p class="text-sm text-stone-500 mt-1">Esnek çalışma prensiplerine uygun brüt beton ve ahşap
+                        detaylar.</p>
+                </div>
+
+                <!-- Kart 3 (Tıklanınca modal-3 açılır) -->
+                <div onclick="openModal('modal-3')" class="group cursor-pointer">
+                    <div class="relative overflow-hidden aspect-[4/3] bg-stone-200 mb-4">
+                        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80"
+                            alt="Nişantaşı Penthouse"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out">
+                        <div
+                            class="absolute inset-0 bg-stone-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span
+                                class="bg-white/90 text-stone-900 text-xs uppercase tracking-wider font-semibold px-4 py-2 shadow-lg">Galeriyi
+                                Gör</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between text-xs text-stone-400 uppercase tracking-wider mb-1">
+                        <span>İç Mimari</span>
+                        <span>2025</span>
+                    </div>
+                    <h3 class="text-xl font-medium text-stone-900 group-hover:text-amber-800 transition-colors">
+                        Nişantaşı Penthouse
+                    </h3>
+                    <p class="text-sm text-stone-500 mt-1">Geniş tavanlar, gizli aydınlatmalar ve dingin bir renk
+                        paleti.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== AÇILIR GALERİ PENCERELERİ (MODALLAR) ==================== -->
+
+    <!-- Modal 1: Sapanca Evi -->
+    <div id="modal-1"
+        class="fixed inset-0 z-50 bg-stone-950/80 backdrop-blur-sm hidden flex items-center justify-center p-4 sm:p-6">
+        <div class="bg-white w-full max-w-4xl max-h-[90vh] overflow-y-auto p-6 sm:p-8 relative shadow-2xl">
+            <!-- Kapatma Butonu (X) -->
+            <button onclick="closeModal('modal-1')"
+                class="absolute top-4 right-4 text-stone-400 hover:text-stone-900 text-2xl font-bold w-10 h-10 flex items-center justify-center">✕</button>
+
+            <div class="mb-6">
+                <span class="text-xs uppercase tracking-widest text-amber-700 font-semibold">Proje Galerisi</span>
+                <h3 class="text-2xl font-light text-stone-900 mt-1">Sapanca Cam & Çelik Ev</h3>
+                <p class="text-sm text-stone-500 mt-1">Alan: 320 m² | Konum: Sakarya, Sapanca | Tamamlanma: 2025</p>
+            </div>
+
+            <!-- Devam Eden Örnek Resimler (Galeri) -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <div class="aspect-[4/3] bg-stone-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=600&q=80"
+                        alt="Geniş Salon" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-[4/3] bg-stone-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=600&q=80"
+                        alt="Mutfak Alanı" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-[4/3] bg-stone-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80"
+                        alt="Yatak Odası & Orman" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <p class="text-sm text-stone-600 font-light leading-relaxed">
+                Yapı, arazinin doğal eğimine sadık kalarak kademeli olarak yerleştirildi. Boydan boya cam cepheler
+                sayesinde iç ve dış mekan sınırları tamamen ortadan kaldırıldı.
+            </p>
+        </div>
+    </div>
+
+    <!-- Modal 2: Levent Loft -->
+    <div id="modal-2"
+        class="fixed inset-0 z-50 bg-stone-950/80 backdrop-blur-sm hidden flex items-center justify-center p-4 sm:p-6">
+        <div class="bg-white w-full max-w-4xl max-h-[90vh] overflow-y-auto p-6 sm:p-8 relative shadow-2xl">
+            <button onclick="closeModal('modal-2')"
+                class="absolute top-4 right-4 text-stone-400 hover:text-stone-900 text-2xl font-bold w-10 h-10 flex items-center justify-center">✕</button>
+
+            <div class="mb-6">
+                <span class="text-xs uppercase tracking-widest text-amber-700 font-semibold">Proje Galerisi</span>
+                <h3 class="text-2xl font-light text-stone-900 mt-1">Levent Loft Çalışma Alanı</h3>
+                <p class="text-sm text-stone-500 mt-1">Alan: 650 m² | Konum: Levent, İstanbul | Tamamlanma: 2024</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <div class="aspect-[4/3] bg-stone-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80"
+                        alt="Açık Ofis" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-[4/3] bg-stone-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=600&q=80"
+                        alt="Toplantı Alanı" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-[4/3] bg-stone-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=600&q=80"
+                        alt="Dinlenme Köşesi" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <p class="text-sm text-stone-600 font-light leading-relaxed">
+                Modern çalışma kültürüne uygun, ses yalıtımlı telefon kabinleri ve sosyalleşme odaklı geniş ortak
+                alanlarla tasarlandı.
+            </p>
+        </div>
+    </div>
+
+    <!-- Modal 3: Nişantaşı Penthouse -->
+    <div id="modal-3"
+        class="fixed inset-0 z-50 bg-stone-950/80 backdrop-blur-sm hidden flex items-center justify-center p-4 sm:p-6">
+        <div class="bg-white w-full max-w-4xl max-h-[90vh] overflow-y-auto p-6 sm:p-8 relative shadow-2xl">
+            <button onclick="closeModal('modal-3')"
+                class="absolute top-4 right-4 text-stone-400 hover:text-stone-900 text-2xl font-bold w-10 h-10 flex items-center justify-center">✕</button>
+
+            <div class="mb-6">
+                <span class="text-xs uppercase tracking-widest text-amber-700 font-semibold">Proje Galerisi</span>
+                <h3 class="text-2xl font-light text-stone-900 mt-1">Nişantaşı Penthouse</h3>
+                <p class="text-sm text-stone-500 mt-1">Alan: 240 m² | Konum: Şişli, İstanbul | Tamamlanma: 2025</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                <div class="aspect-[4/3] bg-stone-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=600&q=80"
+                        alt="Salon ve Teras" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-[4/3] bg-stone-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=600&q=80"
+                        alt="Minimal Mutfak" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-[4/3] bg-stone-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80"
+                        alt="Özel Banyo" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <p class="text-sm text-stone-600 font-light leading-relaxed">
+                Şehrin kalbinde izole bir sığınak. Doğal traverten taşları ve ceviz kaplamalar mekana dingin bir
+                atmosfer katıyor.
+            </p>
+        </div>
+    </div>
+    <!-- ==================== HAKKIMIZDA & HİZMETLER ==================== -->
+    <section id="hakkimizda" class="py-24 bg-stone-50 border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+
+                <!-- Sol Taraf: Stüdyo Felsefesi (Hakkımızda) -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs uppercase tracking-widest text-amber-700 font-semibold">Yaklaşımımız</span>
+                    <h2 class="text-3xl sm:text-4xl font-light text-stone-900 leading-tight">
+                        İyi tasarım, gösterişli olanda değil; <span class="font-serif italic text-amber-900">ihtiyaç
+                            duyulanın</span> zarafetindedir.
+                    </h2>
+                    <p class="text-stone-600 font-light leading-relaxed">
+                        Aura Mimarlık olarak 2014'ten bu yana, beton ve camın soğukluğunu doğanın sıcaklığıyla
+                        harmanlıyoruz. Kullanıcının günlük ritmini odağa alan, ışığı en verimli şekilde kullanan
+                        mekanlar kurguluyoruz.
+                    </p>
+                    <div class="pt-4">
+                        <p class="text-stone-900 font-medium">Ahmet Kerem Özcan</p>
+                        <p class="text-stone-500 text-xs uppercase tracking-wider">Kurucu Ortak & Baş Mimar</p>
+                    </div>
+                </div>
+
+                <!-- Sağ Taraf: Hizmetler (01, 02, 03, 04) -->
+                <div id="hizmetler" class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+                    <!-- Hizmet 1 -->
+                    <div class="p-8 bg-white border border-stone-200/70 hover:border-amber-700/50 transition-colors">
+                        <span class="text-xs font-mono text-amber-700">01</span>
+                        <h3 class="text-lg font-medium text-stone-900 mt-4 mb-2">Mimari Projelendirme</h3>
+                        <p class="text-sm text-stone-500 font-light leading-relaxed">
+                            Konsept tasarımdan ruhsat ve uygulama projelerine kadar tüm mimari süreçlerin yönetimi.
+                        </p>
+                    </div>
+
+                    <!-- Hizmet 2 -->
+                    <div class="p-8 bg-white border border-stone-200/70 hover:border-amber-700/50 transition-colors">
+                        <span class="text-xs font-mono text-amber-700">02</span>
+                        <h3 class="text-lg font-medium text-stone-900 mt-4 mb-2">İç Mimari & Dekorasyon</h3>
+                        <p class="text-sm text-stone-500 font-light leading-relaxed">
+                            Mekanın ruhuna uygun malzeme seçimi, aydınlatma tasarımı ve mekana özel mobilya üretimi.
+                        </p>
+                    </div>
+
+                    <!-- Hizmet 3 -->
+                    <div class="p-8 bg-white border border-stone-200/70 hover:border-amber-700/50 transition-colors">
+                        <span class="text-xs font-mono text-amber-700">03</span>
+                        <h3 class="text-lg font-medium text-stone-900 mt-4 mb-2">Şantiye & Uygulama</h3>
+                        <p class="text-sm text-stone-500 font-light leading-relaxed">
+                            Çizilen projelerin sahada milimetrik hassasiyetle ve bütçeye sadık kalınarak hayata
+                            geçirilmesi.
+                        </p>
+                    </div>
+
+                    <!-- Hizmet 4 -->
+                    <div class="p-8 bg-white border border-stone-200/70 hover:border-amber-700/50 transition-colors">
+                        <span class="text-xs font-mono text-amber-700">04</span>
+                        <h3 class="text-lg font-medium text-stone-900 mt-4 mb-2">Restorasyon & Yenileme</h3>
+                        <p class="text-sm text-stone-500 font-light leading-relaxed">
+                            Tarihi veya eski yapıların özgün kimliğini koruyarak çağdaş yaşam standartlarına
+                            kavuşturulması.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- ==================== İLETİŞİM BÖLÜMÜ ==================== -->
+    <section id="iletisim" class="py-24 bg-stone-900 text-stone-100">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+
+                <!-- Sol Taraf: İletişim Bilgileri -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs uppercase tracking-widest text-amber-500 font-semibold">İletişim</span>
+                        <h2 class="text-3xl sm:text-4xl font-light mt-2 text-white">Yeni Bir Projeye Mi Başlıyorsunuz?
+                        </h2>
+                        <p class="text-stone-400 font-light mt-4 leading-relaxed">
+                            Fikirlerinizi dinlemekten ve mekanlarınızı birlikte dönüştürmekten heyecan duyarız. Kahve
+                            eşliğinde projenizi konuşalım.
+                        </p>
+                    </div>
+
+                    <!-- Adres & Telefon Bilgileri -->
+                    <div class="space-y-6 pt-4 border-t border-stone-800 text-sm">
+                        <div>
+                            <p class="text-stone-400 text-xs uppercase tracking-wider">Stüdyo Adresimiz</p>
+                            <p class="text-stone-200 mt-1">Kuruçeşme Fatih Mahallesi Cad. No: 42, İzmit / Kocaeli</p>
+                        </div>
+                        <div>
+                            <p class="text-stone-400 text-xs uppercase tracking-wider">Doğrudan İletişim</p>
+                            <p class="text-stone-200 mt-1">+90 553 663 8214</p>
+                            <p class="text-stone-200">AhmetKeremÖzcan@auramimarlik.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sağ Taraf: Teklif / Mesaj Formu -->
+                <div class="lg:col-span-7 bg-stone-800/60 p-8 sm:p-10 border border-stone-700/60">
+                    <form class="space-y-6">
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <!-- Ad Soyad -->
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-stone-400 mb-2">Adınız
+                                    Soyadınız</label>
+                                <input type="text" placeholder="Tayfun Aydın"
+                                    class="w-full bg-stone-900 border border-stone-700 px-4 py-3 text-stone-100 text-sm focus:border-amber-600 focus:outline-none transition-colors">
+                            </div>
+                            <!-- Telefon / E-posta -->
+                            <div>
+                                <label class="block text-xs uppercase tracking-wider text-stone-400 mb-2">E-posta
+                                    Adresiniz</label>
+                                <input type="email" placeholder="Ender@sirket.com"
+                                    class="w-full bg-stone-900 border border-stone-700 px-4 py-3 text-stone-100 text-sm focus:border-amber-600 focus:outline-none transition-colors">
+                            </div>
+                        </div>
+
+                        <!-- Proje Türü Seçimi -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-stone-400 mb-2">Proje Türü</label>
+                            <select
+                                class="w-full bg-stone-900 border border-stone-700 px-4 py-3 text-stone-300 text-sm focus:border-amber-600 focus:outline-none transition-colors">
+                                <option>Müstakil Konut / Villa</option>
+                                <option>İç Mimari & Renovasyon</option>
+                                <option>Ticari / Ofis Alanı</option>
+                                <option>Diğer</option>
+                            </select>
+                        </div>
+
+                        <!-- Mesaj -->
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-stone-400 mb-2">Proje
+                                Detayları</label>
+                            <textarea rows="4"
+                                placeholder="Projenin konumu, yaklaşık metrekaresi ve hayal ettiğiniz detaylar..."
+                                class="w-full bg-stone-900 border border-stone-700 px-4 py-3 text-stone-100 text-sm focus:border-amber-600 focus:outline-none transition-colors"></textarea>
+                        </div>
+
+                        <!-- Gönder Butonu -->
+                        <button type="button"
+                            class="w-full py-4 bg-amber-700 hover:bg-amber-600 text-white text-xs uppercase tracking-widest font-semibold transition-all">
+                            Talebi Gönder
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER (ALT BİLGİ) ==================== -->
+    <footer class="bg-black text-stone-500 py-8 border-t border-stone-800 text-xs">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Aura Mimarlık Stüdyosu. Tüm hakları saklıdır.</p>
+            <p class="text-stone-600">Designed with Tailwind CSS</p>
+        </div>
+    </footer>
+    <!-- ==================== JAVASCRIPT: MODAL AÇ/KAPA ==================== -->
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Arka planın kaymasını engeller
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.add('hidden');
+            document.body.style.overflow = 'auto'; // Sayfa kaydırmayı tekrar açar
+        }
+    </script>
+</body>
+
+</html>
