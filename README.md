@@ -4,7 +4,7 @@ Modern mimarlık ofisleri ve tasarım stüdyoları için hazırlanmış, mobil u
 
 ## 🚀 Canlı Demo
 Siteyi canlıda incelemek için:  
-👉 **[https://aura-mimarlik-studio.netlify.app/](https://aura-mimarlik-studio.netlify.app/)**
+👉 **[https://aura-mimarlik-studio.netlify.app/](https://aura-mimarlik-studio.netlify.app/#)**
 
 ## 🛠️ Kullanılan Teknolojiler
 * **HTML5:** Semantik web iskeleti
